@@ -2556,6 +2556,26 @@ body.mobile-nav-active #mobile-nav-toggle {
     display: none;
   }
 }
+@media (max-width: 480px) {
+  .section-title-wrap .name {
+    margin: 0 !important;
+  }
+}
+@media (max-width: 480px) {
+  #logo {
+    margin: 0 !important;
+  }
+}
+
+.cta-img {
+  width: 400px;
+}
+
+@media (max-width: 480px) {
+  .cta-img {
+    width: 200px;
+  }
+}
 
 .banner-content h1 span {
   color: #0093df;
