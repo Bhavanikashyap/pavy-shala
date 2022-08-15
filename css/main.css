@@ -2147,6 +2147,11 @@ h6 {
     max-height: 75px;
   }
 }
+@media (max-width: 480px) {
+  #header #logo img {
+    max-height: 55px;
+  }
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -4001,6 +4006,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* =================================== */
 .footer-area {
   background: #000000;
+  padding: 40px;
 }
 .footer-area h4 {
   padding-bottom: 30px;
