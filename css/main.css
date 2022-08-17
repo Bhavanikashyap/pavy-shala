@@ -818,6 +818,7 @@ th {
 
 .announcement > ul {
   font-size: 18px;
+  text-align: start;
 }
 
 .announcement > ul > li {
