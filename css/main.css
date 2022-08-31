@@ -885,6 +885,26 @@ th {
     margin-bottom: 40px;
   }
 }
+
+.rules-list {
+  list-style-type: square;
+  font-size: 16px;
+}
+
+.rules-list > li {
+  padding: 7px;
+}
+
+@media (max-width: 500px) {
+  .rules-list {
+    list-style-type: square;
+    font-size: 16px;
+
+    margin-top: 100px;
+    padding: 20px;
+  }
+}
+
 .section-title-wrap h1 {
   font-weight: 100;
   margin-bottom: 15px;
