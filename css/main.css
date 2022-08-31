@@ -2192,6 +2192,10 @@ h6 {
   border-left: 4px solid #f28c28;
 }
 
+sup {
+  color: gray;
+}
+
 #header #logo img {
   padding: 0;
   height: 100px;
