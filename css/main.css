@@ -3075,11 +3075,27 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 @media (max-width: 480px) {
   .cta-img {
-    height: 250px !important;
-    width: 250px !important;
+    height: 200px !important;
+    width: 200px !important;
     bottom: -15px;
     margin-top: -30px;
-    top: 220px !important;
+    top: 180px !important;
+  }
+}
+
+.mobile-header-img {
+  display: none;
+  animation: none !important;
+}
+
+@media (max-width: 520px) {
+  .nirvana {
+    display: none;
+  }
+  .mobile-header-img {
+    display: block !important;
+    margin: 0 auto !important;
+    margin-bottom: 10px !important;
   }
 }
 
@@ -3161,6 +3177,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   margin-bottom: 190px;
   margin-top: 60px;
+}
+
+.cooking {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .cooking {
+    margin-top: 0px;
+    margin-bottom: 0px !important;
+    padding-bottom: 40px !important;
+  }
 }
 @media (max-width: 767px) {
   .about-content {
