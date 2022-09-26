@@ -3179,6 +3179,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-top: 60px;
 }
 
+.para-nirvana-img {
+  display: none;
+}
+
+@media (max-width: 520px) {
+  .para-nirvana-img {
+    display: block !important;
+    margin: 0 auto;
+  }
+}
+
 .cooking {
   margin-bottom: 0;
 }
