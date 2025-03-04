@@ -49,10 +49,17 @@
     font-size: 48px;
     margin-left: 1.4rem;
   }
+
+  .section-container {
+    gap: 2rem !important;
+  }
 }
 @media (max-width: 1199.98px) {
   .name h2 {
     font-size: 36px;
+  }
+  .section-container {
+    gap: 2rem !important;
   }
 }
 @media (max-width: 480px) {
