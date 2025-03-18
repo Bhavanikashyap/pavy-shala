@@ -72,7 +72,7 @@ $black			: #000;
 
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
-  color: #000000;
+  color: #000000;text
   opacity: 1;
   font-weight: 300;
 }
@@ -2071,7 +2071,7 @@ h6 {
 .header-text {
   font-size: 36px;
   text-align: center;
-  font-family: "Satisfy", cursive !important;
+  font-family: "verdana", cursive !important;
   font-weight: 400;
   font-style: normal;
   /* padding: 1rem 1rem 0rem 1rem; */
