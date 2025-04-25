@@ -2760,6 +2760,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 16px;
 }
 .about-area .about-right .single-about p {
+  font-family: verdana, Helvetica, sans-serif;
   margin: 0px;
 }
 
