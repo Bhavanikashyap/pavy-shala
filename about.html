@@ -1,367 +1,266 @@
 <!DOCTYPE html>
-<html lang="zxx" class="no-js">
-  <head>
-    <!-- Mobile Specific Meta -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="./img/logo3.png" />
-    <script
-      src="https://kit.fontawesome.com/9afd902f4c.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Author Meta -->
-    <meta name="author" content="colorlib" />
-    <!-- Meta Description -->
-    <meta name="description" content="" />
-    <!-- Meta Keyword -->
-    <meta name="keywords" content="" />
-    <!-- meta character set -->
-    <meta charset="UTF-8" />
-    <!-- Site Title -->
-    <title>PAVY | The Shala</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About PAVY Shala | Ashtanga Yoga with Sheshadri and Harish</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .about-page{background:#fbf8ef}
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700"
-      rel="stylesheet"
-    />
+    .about-overview{background:#f1eee3;padding:70px 9%;min-height:250px;display:flex;align-items:center;justify-content:center;text-align:center}
+    .about-overview-copy{max-width:1120px;width:100%;margin:0 auto;text-align:center}
+    .about-overview-copy .section-label{margin-bottom:12px}
+    .about-overview-copy p{font-family:"Cormorant Garamond",serif;font-size:22px;line-height:1.35;color:#183f36;margin:0}
+    .meet-teachers{background:#fbf8ef;padding:62px 9% 42px}
+    .meet-teachers-inner{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:minmax(280px,380px) minmax(0,1fr);gap:52px;align-items:center}
+    .meet-teachers-photo{width:100%;max-width:380px;height:auto;aspect-ratio:1/1;object-fit:contain;object-position:center;border:0;box-shadow:none;display:block;margin:0 auto}
+    .meet-teachers-copy{max-width:760px;text-align:left}
+    @media(max-width:800px){.meet-teachers-inner{grid-template-columns:1fr;gap:28px}.meet-teachers-photo{max-width:320px;max-height:none;aspect-ratio:1;margin:0 auto}}
+    .meet-teachers .section-label{margin-bottom:12px;text-align:center}
+    .meet-kicker{font-family:Inter,sans-serif;font-size:11px;font-weight:600;letter-spacing:.25em;color:#496b5d;margin:0 0 12px;text-align:center}
+    .meet-teachers h1{font-family:"Cormorant Garamond",serif;font-size:clamp(29px,3.3vw,40px);line-height:1.15;color:var(--green);margin:0 0 22px;text-align:center}
+    .meet-teachers p{font-family:"Cormorant Garamond",serif;font-size:21px;line-height:1.5;color:#183f36;margin:0 0 17px}
+    .meet-teachers p:last-child{margin-bottom:0}
+    @media(max-width:800px){.about-overview{padding:48px 6%;min-height:0}.meet-teachers{padding:42px 6% 28px}.meet-teachers p,.about-overview-copy p{font-size:19px}}
+    .biographies{padding:38px 9% 78px;background:#fbf8ef}
+    .bio-intro{text-align:center;max-width:850px;margin:0 auto 30px}
+    .bio-intro h2{font-family:"Cormorant Garamond",serif;color:var(--green);font-size:clamp(38px,5vw,54px);margin:8px 0 12px}
+    .bio-intro p{font-family:"Cormorant Garamond",serif;font-size:22px;line-height:1.5;color:#294b42}
+    .bio-panel{max-width:1120px;margin:0 auto 42px;background:#fffdf7;border:1px solid #ded9cb;display:grid;grid-template-columns:300px minmax(0,1fr);gap:32px;padding:30px;align-items:start}
+    .bio-content{text-align:left;min-width:0}
+    .bio-photo{border:1px solid #ded9cb;box-shadow:0 5px 18px rgba(30,55,45,.10)}
+    .bio-photo{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center;display:block}
+    .bio-photo.harish-main-photo{aspect-ratio:3/2;object-fit:cover;object-position:center}
+    .bio-content h3{font-family:"Cormorant Garamond",serif;color:var(--green);font-size:38px;line-height:1.05;margin:0 0 5px}
+    .bio-role{font-family:Inter,sans-serif;color:#7a806d;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin:0 0 20px}
+    .bio-content p,.bio-content li{font-family:Inter,sans-serif;font-size:15px;line-height:1.8;color:#3f4a42}
+    .bio-content h4{font-family:"Cormorant Garamond",serif;color:var(--green);font-size:26px;margin:22px 0 5px}
+    .bio-content ul{padding-left:21px;margin-top:8px}
+    .bio-content details{border-top:1px solid #e5e0d4;padding:12px 0}
+    .bio-content summary{font-family:Inter,sans-serif;font-size:14px;font-weight:700;color:var(--green);cursor:pointer}
+    .bio-gallery{margin-top:26px}.bio-gallery h4{margin-bottom:14px!important}.bio-gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.bio-gallery-grid a{display:block;overflow:hidden;background:#eee9dd;border-radius:2px}.bio-gallery-grid img{width:100%;height:150px;object-fit:cover;display:block;transition:transform .25s}.bio-gallery-grid a:hover img{transform:scale(1.04)}@media(max-width:600px){.bio-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.bio-gallery-grid img{height:125px}}
+    .bio-quote{font-family:"Cormorant Garamond",serif!important;font-size:25px!important;font-style:italic;color:var(--green)!important;border-left:3px solid #8c9a7a;padding-left:18px;margin:16px 0 22px}
+    @media(max-width:800px){.biographies{padding:55px 5%}.bio-panel{grid-template-columns:1fr;padding:20px;gap:22px}.bio-photo{max-height:360px;aspect-ratio:4/3}.bio-content h3{font-size:34px}.bio-content p,.bio-content li{font-size:14px}}
 
-    <!--
-			CSS
-			============================================= -->
-    <link rel="stylesheet" href="css/linearicons.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/magnific-popup.css" />
-    <link rel="stylesheet" href="css/nice-select.css" />
-    <link rel="stylesheet" href="css/animate.min.css" />
-    <link rel="stylesheet" href="css/owl.carousel.css" />
-    <link rel="stylesheet" href="css/jquery-ui.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/nameAnimation.css" />
-  </head>
+    .about-hero{padding:82px 9% 70px;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center;background:#f1eee3}
+    .about-hero h1{font-family:"Cormorant Garamond",serif;color:var(--green);font-size:clamp(48px,6vw,78px);line-height:.95;margin:0 0 18px}
+    .about-hero .lead{font-family:"Cormorant Garamond",serif;font-size:25px;line-height:1.35;margin:0;max-width:760px}
+    .teacher-round{width:min(360px,100%);aspect-ratio:1;border-radius:50%;object-fit:cover;display:block;margin:auto;box-shadow:0 18px 45px rgba(15,87,71,.12)}
+    .about-body{padding:75px 9%}
+    .story{max-width:1000px;margin:0 auto}
+    .story p{font-family:"Cormorant Garamond",serif;font-size:22px;line-height:1.55;margin:0 0 20px;color:#183f36}
+    .story strong{font-weight:700}
+    .image-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:55px 0 70px}
+    .image-grid img{width:100%;height:420px;object-fit:cover;display:block}
+    .teacher-feature{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center;max-width:1100px;margin:0 auto 80px}
+    .teacher-feature img{width:100%;height:520px;object-fit:cover;display:block}
+    .teacher-feature p{font-family:"Cormorant Garamond",serif;font-size:22px;line-height:1.5}
+    .course-area{background:#f1eee3;padding:75px 9%}
+    .course-area h2,.certificate h2{font-family:"Cormorant Garamond",serif;color:var(--green);font-size:48px;text-align:center;margin:0 0 35px}
+    .course-list{max-width:1050px;margin:auto;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .course-item{background:#fffdf7;border:1px solid #ddd8c9;padding:22px 25px;font-family:"Cormorant Garamond",serif;font-size:22px;font-weight:600;color:var(--green)}
+    .certificate{padding:70px 9%;text-align:center}
+    .certificate p{max-width:850px;margin:auto;font-family:"Cormorant Garamond",serif;font-size:22px;line-height:1.5}
+    .about-footer-nav{text-align:center;padding:0 9% 70px}
+    @media(max-width:800px){
+      .about-hero,.teacher-feature{grid-template-columns:1fr;gap:35px}
+      .image-grid,.course-list{grid-template-columns:1fr}
+      .image-grid img{height:auto}
+      .teacher-feature img{height:auto}
+      .story p,.teacher-feature p,.certificate p{font-size:19px}
+    }
+    /* V76: match the About page typography to the Home page */
+    .about-page{font-family:Inter,Arial,sans-serif}
+    .about-page .about-overview-copy p,
+    .about-page .meet-teachers p,
+    .about-page .bio-intro p,
+    .about-page .bio-content p,
+    .about-page .bio-content li,
+    .about-page .bio-quote{font-family:"Cormorant Garamond",serif}
+    .about-page .bio-content p,
+    .about-page .bio-content li{font-size:20px;line-height:1.55;color:#183f36}
+    .about-page .bio-content h3,
+    .about-page .bio-content h4,
+    .about-page .meet-teachers h1,
+    .about-page .bio-intro h2{font-family:"Cormorant Garamond",serif}
+    .about-page .bio-role,
+    .about-page .bio-content summary,
+    .about-page .meet-kicker{font-family:Inter,Arial,sans-serif}
+  </style>
+</head>
+<body class="about-page">
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <img src="assets/pavy-logo.png" alt="PAVY Shala Logo">
+    <div class="brand-copy">
+      <div class="brand-name">PAVY SHALA</div>
+      <div class="brand-subtitle">Ashtanga Yoga with Sheshadri and Harish</div>
+    </div>
+  </a>
+  <nav class="nav">
+    <a href="index.html#home">Home</a>
+    <a href="about.html">About</a>
+    <div class="nav-dropdown">
+      <button class="nav-dropbtn" type="button">Courses <span>▾</span></button>
+      <div class="nav-dropdown-menu">
+        <a href="courses/mysore-ashtanga-yoga.html">Ashtanga Yoga Mysore Style</a>
+        <a href="courses/pranayama.html">Pranayama</a>
+        <a href="courses/teacher-training-course.html">Teacher Training Course (TTC)</a>
+        <a href="courses/certification-course.html">Certification Course</a>
+        <a href="courses/yoga-sutra-chanting.html">Yoga Sutra Chanting with Explanation</a>
+        <a href="courses/cooking-class.html">Cooking Class</a>
+      </div>
+    </div>
+    <a href="index.html#schedule">Schedule</a><a href="index.html#workshops">Workshops</a><a href="index.html#gallery">Gallery</a><a href="index.html#contact">Contact</a><a href="blog.html">Blog</a><a class="nav-button" href="index.html#registration">Enquire / Register</a>
+  </nav>
+</header>
 
-  <body>
-    <!-- start header Area -->
-    <header id="header">
-      <div class="header-top">
-        <div class="container">
-          <div class="row flex justify-content-between">
-            <div class="header-top-left no-padding">
-              <ul>
-                <li>
-                  <a href="https://instagram.com/harish.sheshadri"
-                    ><i class="fa fa-instagram"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <div class="header-top-name">
-              <p class="header-text">Ashtanga Yoga with Sheshadri and Harish</p>
-            </div>
-            <div class="header-top-right no-padding">
-              <a class="book-now" href="tel:+919686616390">Enroll Now</a>
-            </div>
+<main>
+  <section class="about-overview">
+    <div class="about-overview-copy">
+      <div class="section-label">ABOUT PAVY SHALA</div>
+      <p>PAVY Shala | Ashtanga Yoga with Sheshadri and Harish was established in 1994 to teach the traditional Mysuru Ashtanga Vinyasa Yoga.</p>
+    </div>
+  </section>
+
+  <section class="meet-teachers" id="meet-our-teachers">
+    <div class="meet-teachers-inner">
+      <img class="meet-teachers-photo" src="assets/sheshadri-harish-round.png" alt="Sheshadri and Harish, the teachers of PAVY Shala">
+      <div class="meet-teachers-copy">
+      <div class="section-label">MEET OUR TEACHERS</div>
+      <div class="meet-kicker">SHESHADRI &amp; HARISH</div>
+      <h1>Personal Guidance for Every Practitioner</h1>
+      <p><strong>Sheshadri</strong>, the Founder of PAVY Shala, belongs to the most experienced, world renowned and certified teachers in Ashtanga Vinyasa Yogasana and Pranayama, trained by his Guruji B.N.S. Iyengar.</p>
+      <p><strong>Sheshadri</strong> passed his knowledge on to his son <strong>Harish</strong>, who is now the Director of PAVY Shala. <strong>Harish</strong> is also an experienced, world renowned and certified Ashtanga Vinyasa Yogasana and Pranayama teacher.</p>
+      <p>PAVY Shala provides a suitable and positive environment with a spacious hall for Asana and Pranayama practices. <strong>Sheshadri and Harish</strong> bring a unique and passionate teaching technique to their Ashtanga Vinyasa classes, giving clear and intelligent instructions and offering precise adjustments. <strong>Sheshadri</strong> is described as strong and energetic, while <strong>Harish</strong> brings a more dynamic energy.</p>
+      <p>Each student receives personal attention, clear instructions and adjustments from <strong>Sheshadri and Harish</strong> to help reach their full potential, regardless of their level of Yogasana practice.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="biographies" id="teacher-biographies">
+    <div class="bio-intro">
+      <div class="section-label">TEACHER BIOGRAPHIES</div>
+      <h2>Sheshadri &amp; Harish</h2>
+      <p>Learn more about the Founder and Director of PAVY Shala.</p>
+    </div>
+
+    <article class="bio-panel" id="sheshadri-biography">
+      <img class="bio-photo" src="assets/sheshadri-biography/sheshadri-teaching-2.jpg" alt="Sheshadri guiding a student during a yoga adjustment">
+      <div class="bio-content">
+        <h3>Sheshadri</h3><div class="bio-role">Founder · PAVY Shala</div>
+        <p>Sheshadri is an experienced and respected teacher of traditional Ashtanga Vinyasa Yoga and Pranayama. He has been teaching since 1994 and follows the traditional lineage associated with Sri T. Krishnamacharya, Sri K. Pattabhi Jois and his Guru, Sri B.N.S. Iyengar.</p>
+        <h4>Yoga journey and training</h4>
+        <p>Sheshadri studied Yogasana, basic and advanced Pranayama, Bandha, Mudra and yoga philosophy for 13 years under Sri B.N.S. Iyengar at Parakala Mutt Yogashala in Mysuru. He also travelled throughout India to study yoga and transcendental meditation.</p>
+        <p>He studied Maharshi Patanjali's Yoga Sutras and practised Ashtanga Yoga under Maharshi Nagaraja Surya Narayana Pande for three years. His additional training includes SSY, SSY Higher, NSY, MSY, Patanjali Kriye and TTC with Guruji Prakash Yogi. He completed YTTC, Diploma in Yoga and Postgraduate Diploma in Yoga, and secured first rank in the Diploma in Yoga and Nature Cure conducted by a university.</p>
+        <details><summary>Read more about Sheshadri's teaching and PAVY Shala</summary>
+          <h4>Establishing PAVY Shala</h4>
+          <p>In 1994, Sheshadri established PAVY Shala and began teaching traditional Ashtanga Vinyasa Yogasana and Pranayama at Renukacharya Temple in Mysuru, where he continued until 2000. He began teaching Western students there in 1998. In 2001, he established Mysore Mandala Yoga Shala with Mr. Ian Robertson, continuing classes and teacher training.</p>
+          <p>Known for attentive teaching and a keen eye for detail, Sheshadri developed a style of dynamic, precise adjustments intended to help each practitioner work according to their individual needs and capacity. He has shared his experience with thousands of students through classes and teacher training courses.</p>
+          <h4>Passing on the tradition</h4>
+          <p>Sheshadri passed his knowledge and teaching techniques to his son Harish, Director of PAVY Shala. They have taught together regularly since 2004. In 2008, they began teaching from their new shala in Krishnamurthypuram, Mysuru, under the name PAVY Shala — Patanjala Ashtanga Vinyasa Yoga Shala.</p>
+          <h4>International workshops</h4>
+          <ul><li><strong>2006:</strong> Vienna, Austria.</li><li><strong>2007:</strong> Berlin and Cologne, Germany.</li><li><strong>2008–2010:</strong> Workshops across Austria, France, Germany and Budapest.</li><li><strong>2011–2013:</strong> Regular European workshops, plus workshops in Thailand and Lebanon in 2012.</li><li><strong>2017:</strong> A 50-day tour in France, including Lyon, Chamonix, Marseille, Biarritz, Lille and Paris.</li><li><strong>2019:</strong> A 50-day tour in France, including Lyon, Chamonix, Biarritz, Lille and Paris.</li></ul>
+          <h4>Credentials and awards</h4>
+          <p>Sheshadri secured third place at the 7th International Yoga Festival in 1999, organised by the Department of Tourism in Pondicherry, India.</p>
+          <ul><li>Shresta Sadhaka — GSS Yoga Foundation &amp; Prachodayat</li><li>Yoga Sutra Ratnakara — GSS Yoga &amp; Himalaya Foundation</li><li>Yoga Chaitanya — CYK Research Foundation</li><li>Yoga Bhaskara — BSV Kendra &amp; Himalaya Foundation</li><li>Yoga Ratna — Himalaya Yoga Foundation &amp; Mysuru Yogashala</li><li>Dasara Yoga Siri (2013) — Government of Karnataka, Mysuru</li><li>Yoga Chatura (2014) — Swami Vivekananda Kannada Yuva Yoga Balaga, Mandya</li><li>Yoga Bhushana (2015) — GSS Yoga Foundation, Mysuru</li><li>Yoga Visharada (2016) — VYE &amp; RI, Mysuru</li></ul>
+        </details>
+        <div class="bio-gallery">
+          <h4>Sheshadri — Teaching &amp; Practice Photographs</h4>
+          <div class="bio-gallery-grid">
+            <a href="assets/sheshadri-biography/sheshadri-yoga-pose-1.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/sheshadri-biography/sheshadri-yoga-pose-1.jpg" alt="Sheshadri demonstrating a traditional yoga posture"></a>
+            <a href="assets/sheshadri-biography/sheshadri-arm-balance.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/sheshadri-biography/sheshadri-arm-balance.jpg" alt="Sheshadri demonstrating an arm balance"></a>
+            <a href="assets/sheshadri-biography/sheshadri-teaching-1.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/sheshadri-biography/sheshadri-teaching-1.jpg" alt="Sheshadri assisting a student in yoga practice"></a>
+            <a href="assets/sheshadri-biography/sheshadri-teaching-2.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/sheshadri-biography/sheshadri-teaching-2.jpg" alt="Sheshadri guiding a student during a yoga adjustment"></a>
+            <a href="assets/sheshadri-biography/sheshadri-practice-advanced-seated.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/sheshadri-biography/sheshadri-practice-advanced-seated.jpg" alt="Sheshadri demonstrating an advanced seated yoga posture"></a>
+            <a href="assets/sheshadri-biography/sheshadri-arm-balance-seated.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/sheshadri-biography/sheshadri-arm-balance-seated.jpg" alt="Sheshadri demonstrating an arm balance"></a>
+            <a href="assets/sheshadri-biography/sheshadri-advanced-arm-balance.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/sheshadri-biography/sheshadri-advanced-arm-balance.jpg" alt="Sheshadri demonstrating an advanced arm balance"></a>
           </div>
         </div>
       </div>
-      <div class="container main-menu">
-        <div class="row align-items-center justify-content-between d-flex">
-          <div id="logo">
-            <a href="index.html"
-              ><img src="img/logo.png" alt="PAVY Logo" title=""
-            /></a>
-          </div>
-          <nav id="nav-menu-container">
-            <ul class="nav-menu">
-              <li><a href="index.html">Home</a></li>
-              <li><a class="active" class="active" href="#">The Shala</a></li>
-              <li class="menu-has-children">
-                <a href="./teachers.html">Teachers</a>
-              </li>
-              <li><a href="rules.html">Rules</a></li>
-              <li class="menu-has-children">
-                <a href="./ashtanga.html">Programs & Courses</a>
-                <ul>
-                  <li><a href="./ashtanga.html">Ashtanga Mysore Style</a></li>
-                  <li><a href="./ttc.html">TTC</a></li>
-                  <li><a href="./pranyama.html">Pranayama</a></li>
-                  <li><a href="./cooking.html">Cooking</a></li>
-                </ul>
-              </li>
+    </article>
 
-              <li><a href="schedule.html">Schedule</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-          <!-- #nav-menu-container -->
-        </div>
-      </div>
-    </header>
-    <!-- end header Area -->
-
-    <!-- start banner Area -->
-    <section class="banner-area relative about-banner" id="home">
-      <!--<img
-        style="height: 300px; width: 500px"
-        class="cta-img img-fluid"
-        src="img/cta-img.png"
-        alt=""
-      />-->
-      <div class="overlay overlay-bg"></div>
-      <div class="container">
-        <div class="row d-flex align-items-center justify-content-center">
-          <div class="about-content col-lg-12">
-            <h2
-              class="banner-text"
-              style="font-weight: 200; font-size: 16px; font-weight: 400"
-            >
-              Ashtanga Yoga with Sheshadri and Harish
-            </h2>
+    <article class="bio-panel" id="harish-biography">
+      <img class="bio-photo harish-main-photo" src="assets/harish-biography/harish-main-teaching-photo.jpg" alt="Harish guiding a student in an assisted yoga posture">
+      <div class="bio-content">
+        <h3>Harish</h3><div class="bio-role">Director · PAVY Shala</div>
+        <p class="bio-quote">“Yoga is bringing fitness in body, calmness in mind, kindness in heart and awareness in life.”</p>
+        <p>Harish grew up in a yogic household where both his parents practised yoga. Though introduced to yoga as a child, he began a regular daily practice at 18 and received dedicated instruction from his father and Guru, Sheshadri. His commitment to yoga developed by personal choice, inspired by his parents and their way of practice.</p>
+        <h4>Education and qualifications</h4>
+        <p>Harish completed his Bachelor of Computer Applications (BCA), Master of Science in Yoga in 2016 and Bachelor of Arts in Sanskrit in 2024. He has completed YIC, YTTC and yoga courses through reputed institutions and universities in India. He secured first rank in Diploma in Yoga and Ashtanga Vinyasa Yoga and Postgraduate Diploma in Yoga courses, and second rank in a Diploma in Yoga and Nature Cure conducted by a university.</p>
+        <details><summary>Read more about Harish's training, teaching and awards</summary>
+          <h4>Training and teaching</h4>
+          <p>Harish studied Maharshi Patanjali's Yoga Sutras and practised Ashtanga Yoga under Maharshi Nagaraja Surya Narayana Pande for three years. He also completed SSY, SSY Higher, NSY, MSY, Patanjali Kriye and TTC with Guruji Prakash Yogi.</p>
+          <p>In 2004, Harish began regularly assisting Sheshadri at Mysore Mandala Yoga Shala. His teaching is known for dynamic and precise adjustments, clear instruction and attention to each practitioner's needs. In 2008, he and Sheshadri began teaching at their new PAVY Shala in Krishnamurthypuram, Mysuru.</p>
+          <h4>International workshops</h4>
+          <ul><li><strong>2007:</strong> Berlin and Cologne, Germany.</li><li><strong>2009:</strong> A month-long European tour including Austria, France and Germany.</li><li><strong>2010–2013:</strong> Workshops across Austria, France, Budapest and other European destinations; Thailand and Lebanon in 2012.</li><li><strong>2017:</strong> A 50-day workshop tour in France, including Lyon, Chamonix, Marseille, Biarritz, Lille and Paris.</li><li><strong>2019:</strong> A 50-day workshop tour in France, including Lyon, Chamonix, Biarritz, Lille and Paris.</li></ul>
+          <h4>Sporting achievements</h4>
+          <p>Harish participated in 100-metre and 200-metre athletics events until age 17, then competed in Kho-Kho for six years. He represented Karnataka at national level on four occasions and secured first place.</p>
+          <h4>Awards and recognition</h4>
+          <ul><li>Yoga Nakshatra — GSS Yoga &amp; M.Y. Balaga</li><li>Ashtanga Yoga Sadhaka — Himalaya Yoga Foundation</li><li>Yoga Sadhaka (2014) — Mysuru Yoga Association (R)</li><li>Yoga Bhushana (2019) — Mysuru Yoga Association (R) &amp; Himalaya Foundation</li></ul>
+        </details>
+        <div class="bio-gallery">
+          <h4>Harish — Teaching &amp; Practice Photographs</h4>
+          <div class="bio-gallery-grid">
+            <a href="assets/harish-biography/harish-adjustment-1.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/harish-biography/harish-adjustment-1.jpg" alt="Harish assisting a student in an advanced Ashtanga posture"></a>
+            <a href="assets/harish-biography/harish-ashtanga-1.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/harish-biography/harish-ashtanga-1.jpg" alt="Harish demonstrating an Ashtanga Yoga posture"></a>
+            <a href="assets/harish-biography/harish-ashtanga-2.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/harish-biography/harish-ashtanga-2.jpg" alt="Harish practising an Ashtanga Yoga arm balance"></a>
+            <a href="assets/harish-biography/harish-backbend.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/harish-biography/harish-backbend.jpg" alt="Harish demonstrating a backbend"></a>
+            <a href="assets/harish-biography/harish-split.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/harish-biography/harish-split.jpg" alt="Harish demonstrating a seated split posture"></a>
+            <a href="assets/harish-biography/harish-teaching-adjustment.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/harish-biography/harish-teaching-adjustment.jpg" alt="Harish providing a precise yoga adjustment"></a>
+            <a href="assets/harish-biography/harish-bekasana.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/harish-biography/harish-bekasana.jpg" alt="Harish demonstrating Bekasana"></a>
+            <a href="assets/harish-biography/harish-practice-08.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/harish-biography/harish-practice-08.jpg" alt="Harish demonstrating a kneeling backbend"></a>
+            <a href="assets/harish-biography/harish-practice-09.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/harish-biography/harish-practice-09.jpg" alt="Harish demonstrating a seated forward fold"></a>
+            <a href="assets/harish-biography/harish-practice-10.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/harish-biography/harish-practice-10.jpg" alt="Harish demonstrating an upward-facing plank posture"></a>
+            <a href="assets/harish-biography/harish-practice-11.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/harish-biography/harish-practice-11.jpg" alt="Harish demonstrating a standing forward fold"></a>
+            <a href="assets/harish-biography/harish-practice-12.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/harish-biography/harish-practice-12.jpg" alt="Harish demonstrating a standing side-angle posture"></a>
+            <a href="assets/harish-biography/harish-practice-13.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/harish-biography/harish-practice-13.jpg" alt="Harish demonstrating an extended standing balance"></a>
+            <a href="assets/harish-biography/harish-practice-14.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/harish-biography/harish-practice-14.jpg" alt="Harish demonstrating a bow posture"></a>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End banner Area -->
+    </article>
+  </section>
 
-    <!-- Start Features Area -->
-    <section class="feature-area courses section-gap">
-     
-          <div class="container-fluid">
-          <div class="px-lg-5">
-            <!--  -->
+  <section class="course-area">
+    <div class="section-label" style="text-align:center">COURSES OFFERED AT PAVY SHALA</div>
+    <h2>Courses Offered at PAVY Shala</h2>
+    <div class="course-list">
+      <a class="course-item" href="courses/mysore-ashtanga-yoga.html"><span>Ashtanga Yoga Mysore Style</span><b>→</b></a>
+      <a class="course-item" href="courses/pranayama.html"><span>Pranayama</span><b>→</b></a>
+      <a class="course-item" href="courses/teacher-training-course.html"><span>Teacher Training Course (TTC)</span><b>→</b></a>
+      <a class="course-item" href="courses/certification-course.html"><span>Certification Course</span><b>→</b></a>
+      <a class="course-item" href="courses/yoga-sutra-chanting.html"><span>Yoga Sutra Chanting with Explanation</span><b>→</b></a>
+      <a class="course-item" href="courses/cooking-class.html"><span>Cooking Class</span><b>→</b></a>
+    </div>
+  </section>
 
-            <div class="row">
-              <!-- Gallery item -->
-              
-		    <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-                <div class="bg-white rounded shadow-sm">
-                  <img
-                    src="img/teachers/3.JPG"
-                    alt=""
-                    class="img-fluid card-img-top"
-                  />
-		</div>	
-                  <div class="p-4">
-                    <h5>
-                      <a href="#" class="text-dark">Harish & Sheshadri</a>
-                    </h5>
-                  </div>
-                   </div>
-              <!-- End -->
+  <section class="certificate">
+    <div class="section-label">CERTIFICATE</div>
+    <h2>TTC Certificate</h2>
+    <p>TTC certificate will be issued to the student who has successfully complete the course.</p>
+  </section>
 
-              <!-- Gallery item -->
-              <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-                <div class="bg-white rounded shadow-sm">
-                 <!-- <img
-                    src="img/teachers/15.jpg"
-                    alt=""
-                    class="img-fluid card-img-top"
-                  />-->
-                 <!-- <div class="p-4">
-                    <h5>
-                      <a href="#" class="text-dark"
-                        >Sheshadri doing Mayurasana on Harish</a>
-                      -->
-                    </h5>
-                  </div>
-                </div>
-              </div>
-              <!-- End -->
-              <!-- Gallery item -->
-              <!-- End -->
-              <!-- Gallery item -->
-              <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-                <div class="bg-white rounded shadow-sm">
-                  <img
-                    src="img/teachers/2.JPG"
-                    alt=""
-                    class="img-fluid card-img-top"
-                  />
-                </div>
-              </div>
-              <!-- End -->
-              <!-- Gallery item -->
-              <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-                <div class="bg-white rounded shadow-sm">
-                  <img
-                    src="img/teachers/8.JPG"
-                    alt=""
-                    class="img-fluid card-img-top"
-                  />
-                </div>
-              </div>
-              <!-- End -->
-            </div>
-            <!-- <div class="py-5 text-right">
-              <a href="#" class="btn btn-dark px-5 py-3 text-uppercase"
-                >Show me more</a
-              >
-            </div> -->
-            <!--<h5 class="mb-3">--></h5>
-           
-		<div class="container">
-        <div class="col-lg-12 mt-5 mb-5">
-          <div class="single-about">  
-		  <p>
-		  PAVY Shala | Ashtanga Yoga with Sheshadri and Harish was
-              established in 1994 to teach the traditional mysuru ashtanga
-              vinyasa yoga.
-             </p>
-            <p>
-              Sheshadri, the Founder of PAVY Shala, belongs to the most
-              experienced , world renowned  and certified teacher in Ashtanga Vinyasa Yogasana
-              and Pranayama by his Guruji B.N.S. Iyengar.
-            </p>
-            <p>
-              Sheshadri passed his knowledge on to his son Harish, 
-	      who is now the director of PAVY Shala. Harish is also an experienced, 
-	      world renowned and certified Ashtanga Vinyasa Yogasana and Pranayama teacher.
-            </p>
-            <p>
-              Pavy shala provide a suitable and excellent positive environment
-              and a spacious hall for Asana and Pranayama practices. Sheshadri
-              and Harish bring a unique & passionate teaching technique to their
-              Ashtanga Vinyasa classes by giving clear and intelligent
-              instructions and offering ‘Precise’ adjustments. Sheshadri’s
-              further described as strong and energetic while Harish as more
-              dynamic in energy.
-            </p>
-            <p>
-              Each individual student receives a maximum personal attention,
-              clear instructions and adjustments from Sheshadri and Harish to
-              reach their full potential within the time frame given regardless
-              of the level of their personal yogasana practice.
-            </p>
-            <h5 class="mb-2">Courses offered at PAVY Shala:</h5>
-            <ul style="list-style-type: square">
-              <li>Ashtanga Yoga ( Mysore style / Led class )</li>
-              <li>Pranayama (Basic and Advance)</li>
-              <li>Teacher Training Course (TTC)</li>
-              <li>Certification Course</li>
-              <li>Mudra's and Bandha's</li>
-              <li>Yoga Sutra Chanting</li>
-              <li>Shat Kriyas</li>
-              <li>Cooking class</li>
-            </ul>
-            <br />
-            <h4>Certificate:</h4>
-            <p>
-              TTC certificate will be issued to the student who has successfully
-              complete the course.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Features Area -->
+  <div class="about-footer-nav">
+    <a class="primary-button" href="index.html">← Back to Home</a>
+  </div>
+</main>
 
-    <!-- start footer Area -->
-    <footer class="footer-area section-gap">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-6">
-            <div class="single-footer-widget">
-              <h4>About Us</h4>
-              <p>
-                PAVY Shala | Ashtanga Yoga with Sheshadri and Harish was
-                established in 1994 to teach the Traditional Mysuru Ashtanga
-                Vinyasa Yoga.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
-            <div class="single-footer-widget">
-              <h4>Contact Us</h4>
-              <p>
-                PAVY Shala | Ashtanga Yoga with Sheshadri and Harish 
-              </p>
-              <p>
-                #741, 12th Cross, Gokulam 3rd Stage, Mysuru-570002
-                Karnataka, India.
-              </p>
-              Email:
-              <a style="color: #f28c28" href="mailto:shesharish@gmail.com"
-                >shesharish@gmail.com</a
-              >
-              <br />
-              Email:
-              <a style="color: #f28c28" href="mailto:sheshadri_yoga@yahoo.co.in"
-                >sheshadri_yoga@yahoo.co.in</a
-              >
-              <br />
-
-              Mobile: Harish
-              <a style="color: #f28c28" href="tel:+919686616390"
-                >+919686616390</a
-              >
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6">
-            <h4>Location</h4>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3897.749640024617!2d76.62380081481545!3d12.332630791277312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbc564df91703c0d8!2zMTLCsDE5JzU3LjUiTiA3NsKwMzcnMzMuNiJF!5e0!3m2!1sen!2sin!4v1661958185898!5m2!1sen!2sin"
-              width="100%"
-              height="150"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-            <a
-              href="https://www.google.com/maps/place/12%C2%B019'57.5%22N+76%C2%B037'33.6%22E/@12.3326308,76.6238008,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xbc564df91703c0d8!8m2!3d12.3326308!4d76.6259895?hl=en"
-              target="_blank"
-            >
-              <button
-                type="button"
-                class="btn btn-success-outline mt-2"
-                style="font-family: 'Poppins', sans-serif; color: #f28c28"
-              >
-                Google Map Direction
-                <i style="color: #26ae60" class="fas fa-map-marker-alt"></i>
-              </button>
-            </a>
-          </div>
-        </div>
-        <div class="footer-bottom row align-items-center">
-          <p class="footer-text m-0 col-lg-6 col-md-12">
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            All rights reserved |
-            <span style="color: #f28c28"><a href="#">PAVY Shala</a> </span>
-            <br />
-          </p>
-          <div class="col-lg-6 col-sm-12 footer-social">
-            <a href="https://instagram.com/harish.sheshadri"
-              ><i class="fa fa-instagram"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- End footer Area -->
-
-    <script src="js/noClick.js"></script>
-    <script src="js/vendor/jquery-2.2.4.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-    <script src="js/easing.min.js"></script>
-    <script src="js/hoverIntent.js"></script>
-    <script src="js/superfish.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.tabs.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+<footer id="contact">
+  <div>
+    <strong>PAVY SHALA</strong>
+    <span>Ashtanga Yoga with Sheshadri and Harish</span>
+  </div>
+  <p>Traditional Mysuru Ashtanga Vinyasa Yoga &amp; Pranayama · Mysuru, Karnataka</p>
+</footer>
+</body>
 </html>
+
+<style>
+@media(min-width:801px){.biographies{padding-top:30px}.bio-panel{grid-template-columns:300px minmax(0,1fr);gap:34px}.bio-content{padding-top:2px}}
+@media(max-width:800px){.about-body{padding-bottom:18px!important}.biographies{padding-top:28px}}
+</style>
